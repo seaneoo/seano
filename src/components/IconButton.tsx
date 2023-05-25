@@ -7,7 +7,7 @@ type Props = {
 
 export default function IconButton({ href, icon }: Props) {
   return (
-    <Link href={href} isExternal>
+    <Link href={href} external={true}>
       <span className="block w-8 h-8">{icon}</span>
     </Link>
   );

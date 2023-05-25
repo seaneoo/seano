@@ -4,18 +4,24 @@ import NextLink from 'next/link';
 type LinkProps = React.ComponentProps<typeof NextLink>;
 
 type Props = {
-  isExternal?: boolean;
+  external?: boolean;
 } & LinkProps;
 
-export default function Link(props: Props) {
+export default function Link({
+  href,
+  external,
+  className,
+  children,
+  ...props
+}: Props) {
   return (
     <NextLink
-      {...props}
-      href={props.href}
-      target={props.isExternal ? '_blank' : ''}
-      rel={props.isExternal ? 'noopener noreferrer' : ''}
-      className={classNames(props.className)}>
-      {props.children}
+      href={href}
+      target={external ? '_blank' : ''}
+      rel={external ? 'noopener noreferrer' : ''}
+      className={classNames(className)}
+      {...props}>
+      {children}
     </NextLink>
   );
 }
