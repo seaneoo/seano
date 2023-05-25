@@ -58,12 +58,21 @@ export default function Home() {
         I&apos;m a Denver-based full-stack software developer.
       </p>
       <div className="flex gap-8">
-        <IconButton href="https://github.com/seaneoo" icon={<GitHubIcon />} />
+        <IconButton
+          href="https://github.com/seaneoo"
+          icon={<GitHubIcon />}
+          label="my github"
+        />
         <IconButton
           href="https://www.linkedin.com/in/seaneoo"
           icon={<LinkedInIcon />}
+          label="my linkedin"
         />
-        <IconButton href="mailto:so@seano.dev" icon={<MailIcon />} />
+        <IconButton
+          href="mailto:so@seano.dev"
+          icon={<MailIcon />}
+          label="my email"
+        />
       </div>
     </main>
   );
