@@ -1,3 +1,5 @@
+'use client';
+
 import Link from './Link';
 
 type Props = {
