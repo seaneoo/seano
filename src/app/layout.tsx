@@ -1,6 +1,8 @@
+import ThemeChanger from '@/components/ThemeChanger';
 import classNames from 'classnames';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { Providers } from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,13 +16,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={classNames(
           inter.className,
-          'min-h-screen bg-background text-text selection:bg-text selection:text-background'
+          'min-h-screen bg-background text-text dark:bg-backgroundDark dark:text-textDark selection:bg-text selection:text-background transition-colors'
         )}>
-        {children}
+        <Providers>
+          <ThemeChanger />
+          {children}
+        </Providers>
       </body>
     </html>
   );

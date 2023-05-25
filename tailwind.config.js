@@ -5,6 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       container: {
@@ -12,7 +13,9 @@ module.exports = {
       },
       colors: {
         background: '#ffffff',
-        text: '#212529'
+        backgroundDark: '#0c0a09',
+        text: '#212529',
+        textDark: '#f8fafc'
       }
     }
   },
