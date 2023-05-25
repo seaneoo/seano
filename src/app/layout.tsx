@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={classNames(
           inter.className,
-          'min-h-screen bg-background text-text'
+          'min-h-screen bg-background text-text selection:bg-text selection:text-background'
         )}>
         {children}
       </body>
