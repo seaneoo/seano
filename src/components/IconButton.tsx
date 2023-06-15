@@ -11,7 +11,7 @@ type Props = {
 export default function IconButton({ href, icon, label }: Props) {
   return (
     <Link href={href} external={true} aria-label={label}>
-      <span className="block w-8 h-8">{icon}</span>
+      <span className="block h-8 w-8">{icon}</span>
     </Link>
   );
 }

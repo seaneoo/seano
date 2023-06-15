@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={cx(
           inter.className,
-          'min-h-screen bg-background text-text dark:bg-backgroundDark dark:text-textDark selection:bg-text selection:text-background selection:dark:bg-background selection:dark:text-text transition-colors'
+          'min-h-screen bg-background text-text transition-colors selection:bg-text selection:text-background dark:bg-backgroundDark dark:text-textDark selection:dark:bg-background selection:dark:text-text'
         )}>
         <Providers>
           <ThemeChanger />

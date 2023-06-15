@@ -22,15 +22,15 @@ export default function ThemeChanger() {
 
   return (
     <button
-      className="absolute top-8 left-8 w-8 h-8"
+      className="absolute left-8 top-8 h-8 w-8"
       aria-label={
         theme === 'dark' ? 'switch to light mode' : 'switch to dark mode'
       }
       onClick={changeTheme}>
       {theme === 'dark' ? (
-        <FaSun className="w-full h-full" />
+        <FaSun className="h-full w-full" />
       ) : (
-        <FaMoon className="w-full h-full" />
+        <FaMoon className="h-full w-full" />
       )}
     </button>
   );
