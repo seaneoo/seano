@@ -1,8 +1,8 @@
 'use client';
 
-import { MoonIcon, SunIcon } from '@heroicons/react/24/solid';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 export default function ThemeChanger() {
   const [mounted, setMounted] = useState(false);
@@ -27,7 +27,11 @@ export default function ThemeChanger() {
         theme === 'dark' ? 'switch to light mode' : 'switch to dark mode'
       }
       onClick={changeTheme}>
-      {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+      {theme === 'dark' ? (
+        <FaSun className="w-full h-full" />
+      ) : (
+        <FaMoon className="w-full h-full" />
+      )}
     </button>
   );
 }
