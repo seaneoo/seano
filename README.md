@@ -2,7 +2,9 @@
 
 My personal website. Built with [Next.js 13](https://nextjs.org/) and using [Tailwind CSS](https://tailwindcss.com/).
 
-![screenshot](docs/screenshot.png)
+![light mode](docs/lightmode.png)
+
+![dark mode](docs/darkmode.png)
 
 ## License
 
