@@ -1,6 +1,6 @@
 'use client';
 
-import classNames from 'classnames';
+import cx from 'clsx';
 import NextLink from 'next/link';
 
 type LinkProps = React.ComponentProps<typeof NextLink>;
@@ -21,7 +21,7 @@ export default function Link({
       href={href}
       target={external ? '_blank' : ''}
       rel={external ? 'noopener noreferrer' : ''}
-      className={classNames(className)}
+      className={cx(className)}
       {...props}>
       {children}
     </NextLink>

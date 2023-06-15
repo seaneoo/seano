@@ -1,5 +1,5 @@
 import ThemeChanger from '@/components/ThemeChanger';
-import classNames from 'classnames';
+import cx from 'clsx';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
       <body
-        className={classNames(
+        className={cx(
           inter.className,
           'min-h-screen bg-background text-text dark:bg-backgroundDark dark:text-textDark selection:bg-text selection:text-background selection:dark:bg-background selection:dark:text-text transition-colors'
         )}>
