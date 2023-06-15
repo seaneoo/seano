@@ -1,3 +1,5 @@
+import colors from 'tailwindcss/colors';
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,10 +14,11 @@ module.exports = {
         center: true
       },
       colors: {
-        background: '#ffffff',
-        backgroundDark: '#0c0a09',
-        text: '#212529',
-        textDark: '#f8fafc'
+        background: colors.white,
+        backgroundDark: colors.slate[950],
+        text: colors.slate[700],
+        textDark: colors.slate[50],
+        brand: colors.blue[500]
       }
     }
   },
