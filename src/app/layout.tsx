@@ -1,4 +1,4 @@
-import ThemeChanger from '@/components/ThemeChanger';
+import ThemeChanger from '@/components/theme-changer';
 import cx from 'clsx';
 import { Inter } from 'next/font/google';
 import './globals.css';

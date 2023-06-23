@@ -1,4 +1,4 @@
-import IconButton from '@/components/IconButton';
+import IconButton from '@/components/icon-button';
 import { FaGithub, FaLinkedin, FaMastodon, FaPaperPlane } from 'react-icons/fa';
 
 export default function Home() {

@@ -1,6 +1,6 @@
 'use client';
 
-import Link from './Link';
+import ExtLink from './ext-link';
 
 type Props = {
   href: string;
@@ -10,8 +10,8 @@ type Props = {
 
 export default function IconButton({ href, icon, label }: Props) {
   return (
-    <Link href={href} external={true} aria-label={label}>
+    <ExtLink href={href} aria-label={label}>
       <span className="block h-8 w-8">{icon}</span>
-    </Link>
+    </ExtLink>
   );
 }
