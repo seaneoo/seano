@@ -9,4 +9,8 @@
   a:hover {
     @apply text-brand;
   }
+
+  mark {
+    @apply bg-transparent text-brand underline;
+  }
 }
