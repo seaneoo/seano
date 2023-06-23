@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FaArrowLeft } from 'react-icons/fa';
+import { FaChevronLeft } from 'react-icons/fa';
 
 const pages = [
   {
@@ -24,8 +24,8 @@ export default function Header() {
       <nav className="flex w-full flex-row items-center justify-center gap-4">
         <div className="flex w-32 items-center justify-start">
           {pathname !== '/' && (
-            <Link href="/" className="flex items-center gap-4 text-lg">
-              <FaArrowLeft /> Back
+            <Link href="/" className="flex items-center gap-2 text-lg">
+              <FaChevronLeft /> Back
             </Link>
           )}
         </div>
