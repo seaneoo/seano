@@ -2,7 +2,7 @@
 
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
-import { FaMoon, FaSun } from 'react-icons/fa';
+import { FaMoon, FaSpinner, FaSun } from 'react-icons/fa';
 
 export default function ThemeChanger() {
   const [mounted, setMounted] = useState(false);
@@ -17,12 +17,12 @@ export default function ThemeChanger() {
   };
 
   if (!mounted) {
-    return null;
+    return <FaSpinner className="h-6 w-6 animate-spin" />;
   }
 
   return (
     <button
-      className="absolute left-8 top-8 h-8 w-8"
+      className="h-6 w-6"
       aria-label={
         theme === 'dark' ? 'switch to light mode' : 'switch to dark mode'
       }
