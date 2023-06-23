@@ -1,9 +1,12 @@
+import Header from '@/components/header';
 import IconButton from '@/components/icon-button';
 import { FaGithub, FaLinkedin, FaMastodon, FaPaperPlane } from 'react-icons/fa';
 
 export default function Home() {
   return (
-    <main className="container flex min-h-screen flex-col items-center justify-center gap-16 p-8">
+    <main className="container relative flex min-h-screen flex-col items-center justify-center gap-16 p-8">
+      <Header />
+
       <section>
         <h1 className="mb-4 text-center text-5xl font-black text-brand md:text-6xl">
           Hey, I&apos;m Sean O&apos;Connor.
@@ -12,6 +15,7 @@ export default function Home() {
           I&apos;m a Denver-based full stack software developer.
         </p>
       </section>
+
       <section>
         <div className="flex gap-8">
           <IconButton

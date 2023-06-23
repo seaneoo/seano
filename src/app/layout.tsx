@@ -1,4 +1,3 @@
-import ThemeChanger from '@/components/theme-changer';
 import cx from 'clsx';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -28,10 +27,7 @@ export default function RootLayout({
           inter.className,
           'min-h-screen bg-background text-text transition-colors selection:bg-text selection:text-background dark:bg-backgroundDark dark:text-textDark selection:dark:bg-background selection:dark:text-text'
         )}>
-        <Providers>
-          <ThemeChanger />
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
