@@ -10,14 +10,15 @@ export default function About() {
 
       <section className="w-full text-center text-xl md:w-5/6 lg:w-3/4 lg:text-2xl xl:w-1/2">
         <p className="mb-4">
-          Hey, my name is Sean. I&apos;m a <mark>Denver-based</mark> full stack
-          software developer specializing in front end web development & design
-          using <mark>React</mark> and <mark>Next.js</mark>.
+          Hey, my name is <mark>Sean</mark>. I&apos;m a{' '}
+          <mark>Denver-based</mark> full stack software developer specializing
+          in front end web development & design using <mark>React</mark> (via{' '}
+          <mark>Next.js</mark>), <mark>Java</mark>, and <mark>Python</mark>.
         </p>
 
         <p className="mb-4">
-          I also love to play around with iOS app development and back end
-          development—with the former being my future career plan.
+          Other than full stack, I love to play around with iOS app development
+          and I hope to make a career out of it in the near future.
         </p>
 
         <p className="mb-8">
