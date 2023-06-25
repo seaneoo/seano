@@ -24,7 +24,9 @@ export default function Header() {
       <nav className="flex w-full flex-row items-center justify-center gap-4">
         <div className="flex w-32 items-center justify-start">
           {pathname !== '/' && (
-            <Link href="/" className="flex items-center gap-2 text-lg">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-lg text-text no-underline">
               <FaChevronLeft /> Back
             </Link>
           )}
@@ -35,7 +37,7 @@ export default function Header() {
               key={index}
               href={page.path}
               className={clsx(
-                'text-lg',
+                'text-lg text-text no-underline',
                 pathname === page.path && 'text-brand'
               )}>
               {page.name}

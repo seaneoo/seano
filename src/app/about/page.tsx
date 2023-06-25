@@ -23,26 +23,20 @@ export default function About() {
 
         <p className="mb-8">
           I would love to hear from you! Please{' '}
-          <mark>
-            <ExtLink
-              href={`mailto:so@seano.dev?subject=${
-                emailGreetings[
-                  Math.floor(Math.random() * emailGreetings.length)
-                ]
-              }`}>
-              send me an email
-            </ExtLink>
-          </mark>
+          <ExtLink
+            href={`mailto:so@seano.dev?subject=${
+              emailGreetings[Math.floor(Math.random() * emailGreetings.length)]
+            }`}>
+            send me an email
+          </ExtLink>
           .
         </p>
 
         <p className="text-lg">
           (
-          <mark>
-            <ExtLink href="https://files.catbox.moe/sgctmq.jpeg">
-              Obligatory cat picture
-            </ExtLink>
-          </mark>
+          <ExtLink href="https://files.catbox.moe/sgctmq.jpeg">
+            Obligatory cat picture
+          </ExtLink>
           )
         </p>
       </section>

@@ -4,13 +4,14 @@
 
 @layer base {
   a {
-    @apply transition-colors;
+    @apply text-brand underline transition-colors;
   }
+
   a:hover {
-    @apply text-brand;
+    @apply text-blue-600;
   }
 
   mark {
-    @apply bg-transparent text-brand underline;
+    @apply bg-transparent text-brand;
   }
 }
