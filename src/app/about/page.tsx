@@ -11,14 +11,14 @@ export default function About() {
       <section className="w-full text-center text-xl md:w-5/6 lg:w-3/4 lg:text-2xl xl:w-1/2">
         <p className="mb-4">
           Hey, my name is <mark>Sean</mark>. I&apos;m a{' '}
-          <mark>Denver-based</mark> full stack software developer specializing
-          in front end web development & design using <mark>React</mark> (via{' '}
-          <mark>Next.js</mark>), <mark>Java</mark>, and <mark>Python</mark>.
+          <mark>Denver-based</mark> full stack software developer building
+          gorgeous websites using <mark>React</mark> (via <mark>Next.js</mark>)
+          and applications using <mark>Java</mark> and <mark>Python</mark>.
         </p>
 
         <p className="mb-4">
-          Other than full stack, I love to play around with iOS app development
-          and I hope to make a career out of it in the near future.
+          In addition, I have a rekindled love for building mobile apps for iOS
+          (<mark>Swift</mark>) and Android (<mark>Kotlin</mark>).
         </p>
 
         <p className="mb-8">
