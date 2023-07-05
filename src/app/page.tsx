@@ -21,22 +21,24 @@ export default function Home() {
           <IconButton
             href="https://www.linkedin.com/in/seaneoo"
             icon={<FaLinkedin className="h-full w-full" />}
-            label="my linkedin"
+            aria-label="my linkedin"
           />
           <IconButton
             href="https://github.com/seaneoo"
             icon={<FaGithub className="h-full w-full" />}
-            label="my github"
+            aria-label="my github"
           />
           <IconButton
             href="https://mastodon.social/@seaneoo"
+            rel="me"
             icon={<FaMastodon className="h-full w-full" />}
-            label="my mastodon"
+            aria-label="my mastodon"
           />
+
           <IconButton
             href="mailto:so@seano.dev"
             icon={<FaPaperPlane className="h-full w-full" />}
-            label="my email"
+            aria-label="my email"
           />
         </div>
       </section>
