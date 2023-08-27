@@ -17,8 +17,8 @@ export default function About() {
         </p>
 
         <p className="mb-4">
-          In addition, I have a rekindled love for building mobile apps for iOS
-          (<mark>Swift</mark>) and Android (<mark>Kotlin</mark>).
+          In addition, I have a rekindled love for building iOS moble apps using{' '}
+          <mark>SwiftUI</mark>.
         </p>
 
         <p className="mb-8">
