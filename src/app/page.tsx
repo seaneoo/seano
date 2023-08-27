@@ -1,6 +1,7 @@
 import Header from '@/components/header';
 import IconButton from '@/components/icon-button';
 import { FaGithub, FaLinkedin, FaMastodon, FaPaperPlane } from 'react-icons/fa';
+import { SiMatrix } from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -23,16 +24,24 @@ export default function Home() {
             icon={<FaLinkedin className="h-full w-full" />}
             aria-label="my linkedin"
           />
+
           <IconButton
             href="https://github.com/seaneoo"
             icon={<FaGithub className="h-full w-full" />}
             aria-label="my github"
           />
+
           <IconButton
             href="https://mastodon.social/@seaneoo"
             rel="me"
             icon={<FaMastodon className="h-full w-full" />}
             aria-label="my mastodon"
+          />
+
+          <IconButton
+            href="https://matrix.to/#/@seaneoo:data.haus"
+            icon={<SiMatrix className="h-full w-full" />}
+            aria-label="my secure matrix"
           />
 
           <IconButton
