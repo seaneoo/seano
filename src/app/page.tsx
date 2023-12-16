@@ -1,7 +1,6 @@
 import Header from '@/components/header';
 import IconButton from '@/components/icon-button';
 import { FaGithub, FaLinkedin, FaMastodon, FaPaperPlane } from 'react-icons/fa';
-import { SiMatrix } from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -32,17 +31,17 @@ export default function Home() {
           />
 
           <IconButton
-            href="https://mastodon.social/@seaneoo"
+            href="https://mozilla.social/@sean"
             rel="me"
             icon={<FaMastodon className="h-full w-full" />}
             aria-label="my mastodon"
           />
 
-          <IconButton
+          {/* <IconButton
             href="https://matrix.to/#/@seaneoo:data.haus"
             icon={<SiMatrix className="h-full w-full" />}
             aria-label="my secure matrix"
-          />
+          /> */}
 
           <IconButton
             href="mailto:so@seano.dev"
