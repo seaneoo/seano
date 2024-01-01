@@ -12,7 +12,7 @@ export default function Home() {
           Hey, I&apos;m Sean O&apos;Connor.
         </h1>
         <p className="text-center text-3xl font-medium md:text-4xl">
-          I&apos;m a Denver-based full stack software developer.
+          I&apos;m a Denver-based software developer.
         </p>
       </section>
 

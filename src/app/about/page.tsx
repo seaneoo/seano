@@ -11,18 +11,19 @@ export default function About() {
       <section className="w-full text-center text-xl md:w-5/6 lg:w-3/4 lg:text-2xl xl:w-1/2">
         <p className="mb-4">
           Hey, my name is <mark>Sean</mark>. I&apos;m a{' '}
-          <mark>Denver-based</mark> full stack software developer building
-          gorgeous websites using <mark>React</mark> (via <mark>Next.js</mark>)
-          and applications using <mark>Java</mark> and <mark>Python</mark>.
+          <mark>Denver-based</mark> software developer building gorgeous
+          applications using <mark>Kotlin</mark> and <mark>Swift</mark>.
         </p>
 
         <p className="mb-4">
-          In addition, I have a rekindled love for building iOS moble apps using{' '}
-          <mark>SwiftUI</mark>.
+          I also like to build websites, create back end applications (such as
+          the{' '}
+          <ExtLink href="https://github.com/upcomingmcu/api">UMCU API</ExtLink>
+          ), and mod video games.
         </p>
 
         <p className="mb-8">
-          I would love to hear from you! Please{' '}
+          Let's have a chat! Please{' '}
           <ExtLink
             href={`mailto:so@seano.dev?subject=${
               emailGreetings[Math.floor(Math.random() * emailGreetings.length)]
