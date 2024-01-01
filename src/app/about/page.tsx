@@ -23,7 +23,7 @@ export default function About() {
         </p>
 
         <p className="mb-8">
-          Let's have a chat! Please{' '}
+          Let&apos;s have a chat! Please{' '}
           <ExtLink
             href={`mailto:so@seano.dev?subject=${
               emailGreetings[Math.floor(Math.random() * emailGreetings.length)]
